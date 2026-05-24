@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #2f2f2f;
+
+    /* Soft textured background */
+    background: 
+        radial-gradient(circle at top left, #f5f0e6 0%, transparent 40%),
+        radial-gradient(circle at bottom right, #e9dfc8 0%, transparent 45%),
+        #ffffff;
+
+    scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+.navbar {
+    position: sticky;
+    top: 0;
+    background: rgba(245, 240, 230, 0.95);
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    border-bottom: 1px solid #e6dcc8;
+    z-index: 1000;
+}
+
+.navbar h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #4b4b3f;
+}
+
+.navbar a {
+    color: #4b4b3f;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    color: #a89a78;
+}
+
+/* SECTIONS (THIS FIXES THE “EMPTY LOOK”) */
+.section {
+    padding: 80px 20px;
+    text-align: center;
+
+    /* Card-like section container */
+    max-width: 1000px;
+    margin: 40px auto;
+
+    background: #ffffff;
+    border: 1px solid #eee3d0;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+/* HERO SPECIAL STYLE */
+.hero {
+    background: linear-gradient(135deg, #faf8f3, #ffffff);
+    border: 1px solid #eee3d0;
+}
+
+/* PROFILE IMAGE */
+.profile {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 4px solid #d6c7a1;
+    object-fit: cover;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+/* HEADINGS */
+h1, h2 {
+    color: #4b4b3f;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+p {
+    color: #5c5c50;
+    line-height: 1.6;
+}
+
+/* LISTS */
+ul, ol {
+    display: inline-block;
+    text-align: left;
+    color: #555;
+}
+
+/* CARDS (PROJECTS) */
+.card {
+    background: #faf8f3;
+    margin: 15px auto;
+    padding: 18px;
+    width: 85%;
+    border-radius: 12px;
+    border: 1px solid #eee3d0;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+/* LINKS */
+a {
+    color: #a89a78;
+}
+
+a:hover {
+    color: #7d6f4f;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 40px;
+    padding: 15px;
+    text-align: center;
+    background: #f5f0e6;
+    border-top: 1px solid #e6dcc8;
+    color: #4b4b3f;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar a {
+        display: block;
+        margin: 6px 0;
+    }
+
+    .section {
+        margin: 20px 10px;
+        padding: 50px 15px;
+    }
+
+    .card {
+        width: 95%;
+    }
+
+    .profile {
+        width: 140px;
+        height: 140px;
+    }
+}
